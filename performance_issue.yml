@@ -1,0 +1,60 @@
+name: 📊 Performance Issue
+description: Report performance-related issues
+labels: ["performance", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to report performance issues like slow processing, high latency, or resource usage problems.
+
+  - type: dropdown
+    id: performance_type
+    attributes:
+      label: Performance Issue Type
+      description: What type of performance issue are you experiencing?
+      options:
+        - Processing Speed
+        - API Response Time
+        - Resource Usage
+        - Memory Leak
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: performance_description
+    attributes:
+      label: Issue Description
+      description: Describe the performance issue
+      placeholder: |
+        Please provide:
+        1. Expected performance
+        2. Actual performance
+        3. When did this start happening?
+        4. Any patterns you've noticed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Process type (e.g., translation, stem separation)
+        2. File details (size, format)
+        3. Specific steps to reproduce
+    validations:
+      required: true
+
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Performance Metrics
+      description: Please provide any relevant metrics
+      placeholder: |
+        - Processing time:
+        - File size:
+        - Memory usage:
+        - CPU usage:
+        - Network speed:
