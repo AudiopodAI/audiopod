@@ -1,0 +1,63 @@
+name: 🔧 Technical Support
+description: Get help with technical issues
+labels: ["support", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting a support request, please:
+        1. Check our [documentation](https://docs.audiopod.ai)
+        2. Search existing issues
+        3. Verify your account status
+
+  - type: dropdown
+    id: plan
+    attributes:
+      label: Subscription Plan
+      description: What is your current subscription plan?
+      options:
+        - Basic (Free)
+        - Pro
+        - Enterprise
+    validations:
+      required: true
+
+  - type: input
+    id: api_version
+    attributes:
+      label: API Version
+      description: If using the API, what version?
+      placeholder: "e.g., v1.0.0"
+
+  - type: textarea
+    id: issue_description
+    attributes:
+      label: Issue Description
+      description: Describe the technical issue you're experiencing
+      placeholder: |
+        Please provide:
+        1. What you're trying to achieve
+        2. What's not working
+        3. Any error messages
+    validations:
+      required: true
+
+  - type: textarea
+    id: code_sample
+    attributes:
+      label: Code Sample
+      description: If applicable, provide relevant code
+      render: javascript
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Please provide your environment details
+      placeholder: |
+        - Operating System:
+        - Browser (if applicable):
+        - Node.js version (if applicable):
+        - SDK version (if applicable):
+    validations:
+      required: true
