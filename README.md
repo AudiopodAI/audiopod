@@ -100,8 +100,7 @@ Yes, we take data security very seriously:
 - 📧 Email: support@audiopod.ai
 - 💬 Discord: [Join our community](https://discord.gg/FkNGc7bS)
 
-
-For security issues, please email: security@audiopod.ai
+---
 
 ## Contributing to Support
 
