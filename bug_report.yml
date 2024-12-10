@@ -1,0 +1,82 @@
+name: 🐛 Bug Report
+description: Report a bug in AudioPod
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+        Please fill out the form below with as much detail as possible.
+
+  - type: dropdown
+    id: feature
+    attributes:
+      label: Affected Feature
+      description: Which AudioPod feature is affected?
+      options:
+        - Speaker Extraction
+        - Voice Studio
+        - Audio Translation
+        - Stem Separation
+        - Noise Reduction
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: AudioPod Version
+      description: What version of AudioPod are you using?
+      placeholder: "e.g., Web App or API version"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: What happened?
+      placeholder: |
+        Please provide:
+        1. What you were trying to do
+        2. What actually happened
+        3. What you expected to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Upload file '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs/Screenshots
+      description: Please copy and paste any relevant logs or add screenshots
+      render: shell
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: What browser are you using? (if applicable)
+      placeholder: "e.g., Chrome 91, Firefox 89"
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow AudioPod's Code of Conduct
+          required: true
