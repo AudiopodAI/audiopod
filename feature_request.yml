@@ -1,0 +1,62 @@
+name: 💡 Feature Request
+description: Suggest a new feature for AudioPod
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a new feature!
+        Please provide as much detail as possible to help us understand your idea.
+
+  - type: dropdown
+    id: feature_area
+    attributes:
+      label: Feature Area
+      description: Which area of AudioPod would this feature belong to?
+      options:
+        - Speaker Extraction
+        - Voice Studio
+        - Audio Translation
+        - Stem Separation
+        - Noise Reduction
+        - API/SDK
+        - User Interface
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Description
+      description: What problem does this feature solve?
+      placeholder: |
+        Describe the problem you're facing that this feature would solve.
+        Example: "I'm always frustrated when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution
+      placeholder: |
+        Describe how you envision this feature working.
+        Include any specific requirements or constraints.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: What alternatives have you considered?
+      placeholder: |
+        Describe any alternative solutions or features you've considered.
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Any other context, screenshots, or examples?
